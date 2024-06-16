@@ -23,8 +23,9 @@ const App = () => {
     return (weight/(calculateHeight*calculateHeight)).toFixed(1)
   },[weight,height]);
   return (
+    <>
     <main>
-      <h1>Project 4: BMI Calculator</h1>
+      <h1>BMI Calculator</h1>
       <div className="input-section">
         <p className="slider-output">Weight:{weight} kg</p>
         <input
@@ -45,7 +46,12 @@ const App = () => {
         <p>Your BMI is </p>
         <p className="output">{output}</p>
       </div>
+      
     </main>
+    <div className="right">
+    <p>Made By Laxmi Mehta</p>
+  </div>
+  </>
   );
 };
 
